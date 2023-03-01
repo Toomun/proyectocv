@@ -1,0 +1,338 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: peachpuff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenido
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: bisque;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.contenido h2
+{
+    font-family:'Roboto Slab', serif;
+}
+
+.contenido span h3
+{
+    font-family:'Cinzel Decorativo', cursive;
+    text-align: center;
+    color:bisque;
+}
+
+.contenido .título
+{
+    font-family: Georgia, serif;
+}
+
+.contenido .lado_izquierdo 
+{
+    position: relative;
+    background-color:darksalmon;
+    padding: 40px;
+}
+
+.texto-del-perfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(93, 16, 49, 0.2);
+}
+
+.texto-del-perfil .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.texto-del-perfil .imgBx img 
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.texto-del-perfil h2
+{
+    color:black;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+
+.texto-del-perfil h2 span
+{
+   font-size: 0.8em;
+   font-weight: 300;
+}
+
+.información-contacto
+{
+    padding-top: 30px;
+}
+
+.título
+{
+    color:rgb(109, 24, 24);
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.información-contacto ul
+{
+    position: relative;
+}
+
+.información-contacto ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.información-contacto ul li .ícono
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color:rgb(109, 24, 24);
+}
+
+.información-contacto ul li span
+{
+    font-weight: 300;
+}
+
+.lenguajes .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:#f2dddd;
+    display: block;
+    margin-top:8px;
+}
+
+.lenguajes .porcentaje div
+{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    background: rgb(157, 61 ,61);
+}
+
+#botón
+{   font-weight: bold;
+    cursor: pointer;
+    padding: 4px;
+    border: 1px solid rgb(81, 63, 63);
+    background:rgb(243, 213, 213);
+    border-radius: 8px 8px 8px 8px;
+    margin: 8px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Otras habilidades ul p
+{
+    text-align: center;
+    font-size: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contenido .lado_derecho 
+{
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+
+.perfil 
+{
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.perfil:last-child
+{
+    margin-bottom: 0;
+}
+
+.título2
+{
+    color:rgb(157, 61, 61);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.información-educación li
+{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.información-experiencia li
+{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Habilidades {
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.progreso {
+    width: 100%;
+    height: 12px;
+    display: block;
+    background-color:#f2dddd;
+}
+
+.habilidad {
+    text-align:center;
+    height: 12px;
+    color: white;
+    font-size: 10px;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+
+.ph {
+    background-color: rgb(157, 61 ,61);
+    animation: fillph 2s forwards;
+}
+.ilu {
+    background-color: rgb(157, 61 ,61);
+    animation: fillilu 2s forwards;
+}
+
+.wor {
+    background-color: rgb(157, 61 ,61);
+    animation: fillwor 2s forwards;
+}
+
+.pre {
+    background-color: rgb(157, 61 ,61);
+    animation: fillpre 2s forwards;
+}
+
+@keyframes fillph{
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+
+@keyframes fillilu{
+    0%{width: 0;}
+    100%{width: 85%;}
+}
+
+@keyframes fillwor{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+
+@keyframes fillpre{
+    0%{width: 0;}
+    100%{width: 75%;}
+}
+
+.información-intereses ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.información-intereses ul li
+{
+    list-style: none;
+    font-weight: 500;
+    margin: 10px 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px)
+{
+    .contenido
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .información-intereses ul
+    {
+        grid-template-columns: repeat(2,1fr) 
+    }
+}
+
+@media (max-width: 600px)
+{
+    .información-experiencia .título2
+    {
+        flex-direction: column;
+    }
+
+    .información-experiencia .título2 ul li
+    {
+        margin-bottom: 5px;
+    }
+
+    .información-intereses ul
+    {
+        grid-template-columns: repeat(1,1fr) 
+    }
+    
+    .información-habilidades
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
